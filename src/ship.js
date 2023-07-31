@@ -1,10 +1,8 @@
 function Ship(length) {
+  // a factory function which simply returns an object
   return {
     length,
     hits: 0,
-    get sunk() {
-      return this.isSunk();
-    },
     hit() {
       this.hits += 1;
     },
